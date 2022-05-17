@@ -7,7 +7,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import Product from 'components/product/product';
-import ProductList from 'components/product/product'
+//import ProductList from 'components/product/product'
 //import reportWebVitals from './reportWebVitals';
 
 // const image = React.createElement("img", {
