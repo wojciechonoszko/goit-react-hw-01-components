@@ -7,7 +7,8 @@ import './index.css';
 import Profile from 'components/user/user';
 import Statistic from 'components/statistic/statistic';
 import Transaction from 'components/transaction/transaction';
-import FriendList from 'components/friends/friends';
+//import FriendList from 'components/friends/friends';
+import FriendList from 'components/friends/friendList';
 
 
 let profile=require('components/user/user.json');
