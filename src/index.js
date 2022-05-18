@@ -6,6 +6,8 @@ import './index.css';
 
 import Profile from 'components/user/user';
 import Statistic from 'components/statistic/statistic';
+import Transaction from 'components/transaction/transaction';
+import FriendList from 'components/friends/friends';
 
 
 let profile=require('components/user/user.json');
@@ -30,6 +32,10 @@ root.render(
         <Statistic>
 
         </Statistic>
+        <Transaction/>
+
+        <FriendList/>
+       
         
         
         
