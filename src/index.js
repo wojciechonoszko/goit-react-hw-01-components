@@ -5,17 +5,17 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 
 import Profile from 'components/user/user';
+import Statistic from 'components/statistic/statistic';
 
 
 let profile=require('components/user/user.json');
-
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-    
+        
         <Profile username={profile.username}
         avatar={profile.avatar}
         tag={profile.tag}
@@ -24,8 +24,15 @@ root.render(
         views={profile.stats.views}
         likes={profile.stats.likes}
         >
-
         </Profile>
+
+        
+        <Statistic>
+
+        </Statistic>
+        
+        
+        
      
     
   </React.StrictMode>
