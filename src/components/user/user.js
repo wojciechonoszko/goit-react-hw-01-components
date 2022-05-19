@@ -1,32 +1,32 @@
-import './user.css'
+import { UserWrapper, Avatar, Text, SecondaryText } from './userStyles.js'
 
 export const Profile = ({username, tag, location, avatar, stats,followers,views,likes}) => {
     return (
         <>
         <div>
-            <div>
-                <img
+            <UserWrapper>
+                <Avatar
                     src={avatar}
                     alt="user avatar"
                     classNameName="avatar"
                 />
-                <p>{username}</p>
-                <p>@{tag}</p>
-                <p>{location}</p>
-            </div>
+                <Text>{username}</Text>
+                <SecondaryText>@{tag}</SecondaryText>
+                <SecondaryText>{location}</SecondaryText>
+            </UserWrapper>
 
-            <ul className="stats">
+            <ul>
               <li>
-                <span className="label">Followers</span>
-                <span className="quantity"> {followers}</span>
+                <span>Followers</span>
+                <span> {followers}</span>
               </li>
               <li>
-                <span className="label">Views</span>
-                <span className="quantity"> {views}</span>
+                <span>Views</span>
+                <span> {views}</span>
               </li>
               <li>
-                <span className="label">Likes</span>
-                <span className="quantity"> {likes}</span>
+                <span>Likes</span>
+                <span> {likes}</span>
               </li>
             </ul>
         </div>

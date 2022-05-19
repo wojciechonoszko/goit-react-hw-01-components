@@ -11,7 +11,7 @@ export const Statistic = ({stat}) => (
     <h2 class="title">Stat</h2>
     <ul>
         {statistic.map(stat => (
-            <li key={stat.id}>{stat.label}</li>
+            <li key={stat.id}>{stat.label} {stat.percentage}%</li>
         ))}
     </ul>
     </section>
