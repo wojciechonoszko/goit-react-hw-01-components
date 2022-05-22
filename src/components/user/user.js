@@ -1,9 +1,15 @@
-import { UserWrapper, Avatar, Text, SecondaryText } from './userStyles.js'
+import { UserWrapper,
+  UserWrapperContainer, 
+  Avatar, 
+  Text, 
+  SecondaryText,
+  ProfileStats,
+  ProfileStatsItem} from './userStyles.js'
 
 export const Profile = ({username, tag, location, avatar, stats,followers,views,likes}) => {
     return (
         <>
-        <div>
+        <UserWrapperContainer>
             <UserWrapper>
                 <Avatar
                     src={avatar}
@@ -15,21 +21,21 @@ export const Profile = ({username, tag, location, avatar, stats,followers,views,
                 <SecondaryText>{location}</SecondaryText>
             </UserWrapper>
 
-            <ul>
-              <li>
-                <span>Followers</span>
-                <span> {followers}</span>
-              </li>
-              <li>
-                <span>Views</span>
-                <span> {views}</span>
-              </li>
-              <li>
-                <span>Likes</span>
-                <span> {likes}</span>
-              </li>
-            </ul>
-        </div>
+            <ProfileStats>
+              <ProfileStatsItem>
+                <SecondaryText>Followers</SecondaryText>
+                <Text> {followers}</Text>
+              </ProfileStatsItem>
+              <ProfileStatsItem>
+                <SecondaryText>Views</SecondaryText>
+                <Text> {views}</Text>
+              </ProfileStatsItem>
+              <ProfileStatsItem>
+                <SecondaryText>Likes</SecondaryText>
+                <Text> {likes}</Text>
+              </ProfileStatsItem>
+            </ProfileStats>
+        </UserWrapperContainer>
         </>
     )
 }
