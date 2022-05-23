@@ -11,6 +11,7 @@ margin-right: auto;
 border: 3px solid black;
 margin-top: 20px;
 padding: 20px;
+background-color: #ccffff;
 `;
 
 export const UserWrapper = styled.div`
@@ -25,6 +26,8 @@ export const UserWrapper = styled.div`
 
 export const Avatar = styled.img`
     width: 200px;
+    border-radius: 50%;
+    background-color: white;
 `;
 
 export const Text = styled.p`
