@@ -7,13 +7,13 @@ import { FriendListElem,
 
 export const FriendListItem = ({isOnline, avatar, name}) => {
     
-    const status = `${isOnline ? 'on' : 'off'}`;
-
+    const status = `${isOnline ? true : false}`;
+    console.log(isOnline);
     return (
 
         <FriendListElem>
                 
-                <StatusOnOff isActive= {isOnline} type='button'>{status}</StatusOnOff>
+                <StatusOnOff isOnline={isOnline}>{status}</StatusOnOff>
                 <img src={avatar} alt="User avatar" width="48" />
                 <p>{name}</p>
         </FriendListElem>
@@ -21,4 +21,4 @@ export const FriendListItem = ({isOnline, avatar, name}) => {
     
 };
 
-export default FriendListItem
+export default FriendListItem;

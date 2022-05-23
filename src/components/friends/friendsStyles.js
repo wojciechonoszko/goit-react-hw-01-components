@@ -7,10 +7,14 @@ export const FriendListElem = styled.li`
     width: 300px;
     display: flex;
     flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
 `;
 
-export const StatusOnOff = styled.button`
-    color: ${(isActive) => (isActive ? 'green' : 'red')};
+
+export const StatusOnOff = styled.span`
+    width: 20px;
+    background-color: ${(isOnline) => (isOnline ? 'green' : 'red')};
     
 `;
 
