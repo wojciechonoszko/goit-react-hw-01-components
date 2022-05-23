@@ -1,15 +1,22 @@
-import './friends.css'
+import { FriendListElem,
+        StatusOnOff,
+       
+
+} from './friendsStyles.js'
 
 
 export const FriendListItem = ({isOnline, avatar, name}) => {
+    
     const status = `${isOnline ? 'on' : 'off'}`;
+
     return (
 
-        <li class="item">
-                <span class="status">{status}</span>
-                <img class="avatar" src={avatar} alt="User avatar" width="48" />
-                <p class="name">{name}</p>
-        </li>
+        <FriendListElem>
+                
+                <StatusOnOff isActive= {isOnline} type='button'>{status}</StatusOnOff>
+                <img src={avatar} alt="User avatar" width="48" />
+                <p>{name}</p>
+        </FriendListElem>
     )
     
 };
