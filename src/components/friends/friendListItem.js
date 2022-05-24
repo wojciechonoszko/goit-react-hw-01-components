@@ -11,7 +11,7 @@ export const FriendListItem = ({isOnline, avatar, name}) => {
     console.log(isOnline);
     return (
 
-        <FriendListElem>
+        <FriendListElem isOnline={isOnline}>
                 
                 <StatusOnOff isOnline={isOnline}>{status}</StatusOnOff>
                 <img src={avatar} alt="User avatar" width="48" />
