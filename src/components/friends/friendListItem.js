@@ -7,7 +7,7 @@ import { FriendListElem,
 
 export const FriendListItem = ({isOnline, avatar, name}) => {
     
-    const status = `${isOnline ? true : false}`;
+    const status = `${isOnline ? 'on' : 'off'}`;
     console.log(isOnline);
     return (
 
